@@ -1,7 +1,6 @@
 console.log("starting");
 
 /* calculate db - % */
-
 (function (decibels) {
     if (decibels === 0) {
         return "";
@@ -10,4 +9,3 @@ console.log("starting");
         return decibels;
     }
 })()
-
