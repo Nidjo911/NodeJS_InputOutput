@@ -1,11 +1,4 @@
 console.log("starting");
+const fruits = require('./data.js');
+/* input fruits object in data folder */
 
-/* calculate db - % */
-(function (decibels) {
-    if (decibels === 0) {
-        return "";
-    }
-    else {
-        return decibels;
-    }
-})()

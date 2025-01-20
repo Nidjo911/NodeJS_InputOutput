@@ -18,6 +18,29 @@ const server = http.createServer((req, res) => {
         res.end();
       });
 
+/*       case "/end":
+        fs.readFile('index.html', function (err, data) {
+          res.writeHead(200, { 'Content-Type': 'text/html' });
+          res.write(data);
+          res.end();
+        }); */
+    case "/css/normalize.css":
+      fs.readFile('css/normalize.css', function (err, data) {
+        res.write(data);
+        res.end();
+      });
+
+    case "/css/styles.css":
+      fs.readFile('css/styles.css', function (err, data) {
+        res.write(data);
+        res.end();
+      });
+    case "main.js":
+      fs.readFile('main.js', function (err, data) {
+        res.writeHead(200, { 'Content-Type': 'text/javascript' });
+        res.write(data);
+        res.end();
+      });
     default:
       figlet('404!!', function (err, data) {
         if (err) {
