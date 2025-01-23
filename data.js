@@ -1,4 +1,4 @@
-export const fruits_Object = {
+export const products = {
     name: "",
     month_active: "",
 
