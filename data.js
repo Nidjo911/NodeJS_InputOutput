@@ -4,3 +4,9 @@ export const products = {
 
 
 };
+export const wirez = {
+    name: "",
+    month_active: "",
+
+
+};
